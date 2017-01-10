@@ -1,0 +1,43 @@
+/*try vertically aligning background image:
+http://stackoverflow.com/questions/18516317/vertically-align-an-image-inside-a-div-with-responsive-height*/
+
+body{
+	background-image: url(bierstadt1.JPG);
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	background-repeat: no-repeat;
+	font-family: Quicksand;
+}
+
+/*WHY DOES THIS WORK?? made it so that the entire screen was filled with the background image (before it was getting cut off at the top*/
+html{
+	min-height: 100%;
+}
+
+h1{
+	font-weight: normal;
+	text-align: center;
+	font-size: 400%;
+	color: #6a6c70;
+}
+
+#container{
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+.icon{
+	float: left;
+	color: white;
+	text-align: center;
+	width: 40%;
+	margin: 5%;
+	padding-bottom: 30%;
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		);
+	border-radius: 15%;
+}
