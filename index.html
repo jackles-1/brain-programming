@@ -4,8 +4,17 @@
 	<title>Brain Programming</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/brainProgramming.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet"> 
+
+	<!-- FIGURE OUT HOW TO GET LOCALLY HOSTED FONT AWESOME TO WORK -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/lib/font-awesome.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+
+	<div id="backArrow" class="arrowHidden">
+		<i class="fa fa-arrow-left" aria-hidden="true"></i>
+	</div>
 
 	<h1>Brain Programming</h1>
 
@@ -16,6 +25,19 @@
 		<div class="icon" id="breatheIcon">
 			<p>Breathe</p>
 		</div>
+	</div>
+
+	<div id="breatheCircle" class="hidden">
+		<audio id="breatheSound">
+			<source src="mountainStream.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+
+	<div id="thoughtsDropDown">
+		<select class="hidden">
+			<option value="Anxious">Anxious</option>
+			<option value="Depressed">Depressed</option>
+		</select>
 	</div>
 
 	<script type="text/javascript" src="assets/js/brainProgramming.js"></script>

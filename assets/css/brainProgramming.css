@@ -8,6 +8,7 @@ body{
 	height: 100%;
 	background-repeat: no-repeat;
 	font-family: Quicksand;
+	color: #6a6c70;
 }
 
 /*WHY DOES THIS WORK?? made it so that the entire screen was filled with the background image (before it was getting cut off at the top*/
@@ -15,11 +16,17 @@ html{
 	min-height: 100%;
 }
 
+#backArrow{
+	text-align: right;
+	margin: 2% 2% 0 0;
+	font-size: 200%;
+}
+
 h1{
 	font-weight: normal;
 	text-align: center;
 	font-size: 400%;
-	color: #6a6c70;
+	margin: 1%;
 }
 
 #container{
@@ -44,4 +51,30 @@ h1{
 
 .hidden{
 	display: none;
+}
+
+.arrowHidden{
+	visibility: hidden;
+}
+
+#breatheCircle{
+	border-radius: 50%;
+	background-color: red;
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		);
+	margin: 3% auto;
+	width: 400px;
+	height: 400px;
+}
+
+#thoughtsDropDown{
+	margin: 5% auto;
+	text-align: center;
+}
+
+select{
+
 }
