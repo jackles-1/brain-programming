@@ -19,7 +19,11 @@ html{
 #backArrow{
 	text-align: right;
 	margin: 2% 2% 0 0;
-	font-size: 200%;
+	font-size: 250%;
+}
+
+.arrowHidden{
+	visibility: hidden;
 }
 
 h1{
@@ -53,26 +57,36 @@ h1{
 	display: none;
 }
 
-.arrowHidden{
-	visibility: hidden;
+#thoughtsDropDown{
+	margin: 5% auto;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
 }
 
 #breatheCircle{
 	border-radius: 50%;
-	background-color: red;
 	background: 
 		linear-gradient(
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
 		);
-	margin: 3% auto;
+	margin-right: auto;
+	margin-left: auto;
+	transition: width 8s, height 8s, margin-top 8s;
+}
+
+.inBreath{
+	margin-top: 30px;
 	width: 400px;
 	height: 400px;
 }
 
-#thoughtsDropDown{
-	margin: 5% auto;
-	text-align: center;
+.outBreath{
+	margin-top: 228px;
+	width: 4px;
+	height: 4px;
 }
 
 select{
